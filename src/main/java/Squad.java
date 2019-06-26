@@ -37,8 +37,8 @@ public class Squad {
         return heroes;
     }
     public void addHero(Hero hero) {
-        while (heroes.size()<this.getSize()) {
-            heroes.add(hero);
+        if (heroes.size()<this.getSize()) {
+                heroes.add(hero);
         }
     }
 
