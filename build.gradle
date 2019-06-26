@@ -3,13 +3,13 @@ plugins {
     id 'application'
 }
 
-group 'Hero-Squad'
+group 'hero-squad'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 mainClassName = "App"
 archivesBaseName = "hero-squad"
-applicationName = "Hero-Squad"
+applicationName = "hero-squad"
 
 repositories {
     mavenCentral()
