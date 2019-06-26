@@ -46,7 +46,7 @@ public class SquadTest {
     @Test
     public void getHeroes_returnsListOfHeroes_List() {
         Squad damn = new Squad("Shooters",1,"shoot");
-        Hero muchui = new Hero("amos",1,"kichwa","umama");
+        Hero muchui = new Hero("amos",1,"kichwa","umama",damn.getId());
         damn.addHero(muchui);
         List<Hero> expected = new ArrayList<Hero>();
         expected.add(muchui);
@@ -55,15 +55,15 @@ public class SquadTest {
     @Test
     public void addHero_AddsHeroes_true() {
         Squad damn = new Squad("Shooters",1,"shoot");
-        Hero muchui = new Hero("muchui", 12, "brainee", "Girls");
+        Hero muchui = new Hero("muchui", 12, "brainee", "Girls",damn.getId());
         damn.addHero(muchui);
         assertTrue(damn.getHeroes().contains(muchui));
     }
     @Test
     public void addHero_doesNotAddHeroesOnceSquadSizeIsExceeded_false() {
         Squad damn = new Squad("Shooters",1,"shoot");
-        Hero muchui = new Hero("muchui", 12, "brainee", "Girls");
-        Hero victor = new Hero("vic",12,"brainiac","mainiacs");
+        Hero muchui = new Hero("muchui", 12, "brainee", "Girls",damn.getId());
+        Hero victor = new Hero("vic",12,"brainiac","mainiacs",damn.getId());
         damn.addHero(muchui);
         damn.addHero(victor);
         assertTrue(damn.getHeroes().contains(muchui));
@@ -72,8 +72,8 @@ public class SquadTest {
     @Test
     public void removeHero_removesSingleInstanceOfHero_false() {
         Squad damn = new Squad("Shooters",1,"shoot");
-        Hero muchui = new Hero("muchui", 12, "brainee", "Girls");
-        Hero victor = new Hero("vic",10,"trees","air");
+        Hero muchui = new Hero("muchui", 12, "brainee", "Girls",damn.getId());
+        Hero victor = new Hero("vic",10,"trees","air",damn.getId());
         damn.addHero(muchui);
         damn.addHero(victor);
         damn.removeHero(victor);
@@ -82,8 +82,8 @@ public class SquadTest {
     @Test
     public void removeHeroes_removesSingleInstanceOfHero_false() {
         Squad damn = new Squad("Shooters",2,"shoot");
-        Hero muchui = new Hero("muchui", 12, "brainee", "Girls");
-        Hero victor = new Hero("vic",10,"trees","air");
+        Hero muchui = new Hero("muchui", 12, "brainee", "Girls",damn.getId());
+        Hero victor = new Hero("vic",10,"trees","air",damn.getId());
         damn.addHero(muchui);
         damn.addHero(victor);
         damn.removeHeroes();
