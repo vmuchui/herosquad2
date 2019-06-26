@@ -22,4 +22,4 @@ dependencies {
     compile "org.slf4j:slf4j-simple:1.7.21"
 }
 defaultTasks = ['clean']
-task stage(dependsOn: ['clean', 'installDist'])
+task stage(dependsOn: ['clean', 'installApp'])
