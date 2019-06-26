@@ -21,7 +21,7 @@ This project was created using spark framework and java language.
 ##### on your browser
 * search for `localhost:4567`.
 #### Accessing remotely.
-* click on the link to the deployed site [here](https://muchuihero-squad.herokuapp.com/)
+* click on the link to the deployed site [here](https://heroesandsquads.herokuapp.com/)
 #### Known Bugs
 * In case of of any bugs found please contact using the information below.
 #### Contact Information
