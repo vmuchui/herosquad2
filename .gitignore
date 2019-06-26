@@ -47,3 +47,4 @@ settings.gradle
 .classpath
 .project
 bin/
+gradle/wrapper/gradle-wrapper.properties
