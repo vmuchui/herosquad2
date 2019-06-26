@@ -1,14 +1,14 @@
-import static org.junit.Assert.*;
-import org.junit.*;
+import junit.framework.Test;
+import org.junit.After;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HeroTest {
-    @Before
-    public void setUp() {
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
-    }
+public class HeroTest {
+
     @After
     public void tearDown() {
         Hero.clearAll();
