@@ -1,4 +1,4 @@
-import junit.framework.Test;
+import org.junit.Test;
 import org.junit.After;
 
 import java.util.ArrayList;
