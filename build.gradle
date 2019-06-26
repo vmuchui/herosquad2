@@ -5,6 +5,7 @@ plugins {
 
 group 'Hero-Squad'
 version '1.0-SNAPSHOT'
+goal ''
 
 sourceCompatibility = 1.8
 mainClassName = "App"
