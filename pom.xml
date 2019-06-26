@@ -61,7 +61,7 @@
                     <execution>
                         <phase>package</phase>
                         <goals>
-                            <goal>application</goal>
+                            <goal>single</goal>
                         </goals>
                     </execution>
                 </executions>
